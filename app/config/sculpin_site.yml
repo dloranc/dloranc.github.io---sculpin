@@ -5,5 +5,5 @@ title: Dawid Loranc - blog
 subtitle: O uczeniu maszynowym
 
 # Insert your disqus shortname
-#disqus:
-#    shortname:
+disqus:
+   shortname: DawidLoranc
