@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Strona główna
 generator: pagination
 pagination:
     max_per_page: 3
@@ -17,7 +17,7 @@ use:
         </div>
         {% if post.meta.tags %}
             <p class="tags">
-            Tags:
+            Tagi:
             {% for tag in post.meta.tags %}
             <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
@@ -27,7 +27,7 @@ use:
 {% endfor %}
 {% if page.pagination.previous_page or page.pagination.next_page %}
     <nav>
-        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
-        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
+        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Nowsze posty</a>{% endif %}<br />
+        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Starsze posty</a>{% endif %}<br />
     </nav>
 {% endif %}
