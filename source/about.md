@@ -1,8 +1,8 @@
 ---
 layout: default
-title: About
+title: O mnie
 
 ---
-# About the Author or Blog
+# O mnie
 
-Here is a little information about the author or the blog.
+Trochę informacji o mnie.
