@@ -7,7 +7,9 @@ use:
 <h2>Tagi</h2>
 
 <div>
-{% for tag,posts in data.posts_tags %}
+{% for tag, posts in data.posts_tags %}
 <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
+{% else %}
+Nie ma tagów jeszcze na tym blogu :)
 {% endfor %}
 </div>
