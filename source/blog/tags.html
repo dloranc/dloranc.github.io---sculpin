@@ -10,6 +10,6 @@ use:
 {% for tag, posts in data.posts_tags %}
 <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
 {% else %}
-Nie ma tagów jeszcze na tym blogu :)
+Nie ma jeszcze tagów na tym blogu :)
 {% endfor %}
 </div>
