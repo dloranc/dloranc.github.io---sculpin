@@ -1,6 +1,6 @@
 ---
 title: Hello World!
-draft: true
+
 categories:
     - Sprawy organizacyjne
 
