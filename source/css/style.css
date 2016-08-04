@@ -36,8 +36,20 @@ footer.container {
         padding-top: 30px;
     }
 }
+
 @media (min-width: 980px) {
     body {
         padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    header .title {
+        font-size: 45px;
+    }
+
+    header .title,
+    header small {
+        text-align: center;
     }
 }
