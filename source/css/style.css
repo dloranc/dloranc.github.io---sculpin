@@ -19,6 +19,15 @@ h4 small
     color: #888;
 }
 
+body {
+    font-size: 17px;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0 0 1em;
+}
+
 header,
 .mainContent {
     max-width: 900px;
