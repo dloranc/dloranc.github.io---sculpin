@@ -7,3 +7,7 @@
 /source/components/
 s3.conf
 sculpin.phar
+
+*.sublime-project
+*.sublime-workspace
+.idea/
