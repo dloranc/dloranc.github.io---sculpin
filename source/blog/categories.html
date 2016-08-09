@@ -4,10 +4,12 @@ title: Kategorie
 use:
     - posts_categories
 ---
-<h2>Kategorie</h2>
+<h1>Kategorie</h1>
 
-<div>
-{% for category,posts in data.posts_categories %}
-<a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>
-{% endfor %}
+<div class="categories">
+    <p>
+        {% for category,posts in data.posts_categories %}
+        <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>
+        {% endfor %}
+    </p>
 </div>

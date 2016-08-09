@@ -4,12 +4,12 @@ title: Tagi
 use:
     - posts_tags
 ---
-<h2>Tagi</h2>
+<h1>Tagi</h1>
 
-<div>
+<div class="tags">
 {% for tag, posts in data.posts_tags %}
 <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
 {% else %}
-Nie ma jeszcze tagów na tym blogu :)
+<p>Nie ma jeszcze tagów na tym blogu :)</p>
 {% endfor %}
 </div>

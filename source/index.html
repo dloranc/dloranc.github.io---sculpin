@@ -10,7 +10,8 @@ use:
 {% for post in page.pagination.items %}
     <article>
         <header>
-            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+            <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+            <h4 class="date">{{ post.date | date('d.m.Y') }}</h4>
         </header>
         <div>
             {{ post.blocks.content|raw }}

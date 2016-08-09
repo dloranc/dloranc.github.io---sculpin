@@ -15,7 +15,7 @@ pagination:
 {% block title %}{{ page.title }} "{{ page.category }}"{% endblock %}
 {% block content %}
 {% set year = '0' %}
-<h2>{{ page.category }}</h2>
+<h1>{{ page.category }}</h1>
 {% for post in page.pagination.items %}
 {% set this_year %}{{ post.date | date("Y") }}{% endset %}
 {% if year != this_year %}
@@ -25,10 +25,10 @@ pagination:
 {% set this_month %}{{ post.date | date("m") }}{% endset %}
 {% if month != this_month %}
   {% set month = this_month %}
-  <h3>{{ month }}.{{ year }}</h3>
+  <h2 class="archive-date">{{ month }}.{{ year }}</h2>
 {% endif %}
 <article>
-  <div><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></div>
+  <div><a href="{{ site.url }}{{ post.url }}">{{ post.title }} &mdash; <small>{{ post.date | date("d.m.Y") }}</small></a></div>
 </article>
 {% endfor %}
 
