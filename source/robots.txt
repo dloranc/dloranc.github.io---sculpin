@@ -3,7 +3,7 @@ permalink: none
 ---
 
 User-agent: *
-Disallow: /blog/tags/
-Disallow: /blog/categories/
+Disallow: /blog/tagi/
+Disallow: /blog/kategorie/
 
 Sitemap: {{ site.url }}/sitemap.xml
