@@ -76,6 +76,11 @@ p {
     margin: 0 0 1em;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 header,
 .mainContent {
     max-width: 900px;
@@ -127,6 +132,7 @@ img[alt~=avatar] {
     }
 }
 
+@media (max-width: 450px) {
     img {
         display: block;
         margin: 0 auto;
