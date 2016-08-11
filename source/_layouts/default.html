@@ -63,11 +63,26 @@
 
                                 <div class="nav-collapse collapse">
                                     <ul class="nav">
-                                        <li><a href="{{ site.url }}/">Strona główna</a></li>
-                                        <li><a href="{{ site.url }}/archiwum-postow">Archiwum postów</a></li>
-                                        <li><a href="{{ site.url }}/blog/kategorie">Kategorie</a></li>
-                                        <li><a href="{{ site.url }}/blog/tagi">Tagi</a></li>
-                                        <li><a href="{{ site.url }}/o-mnie">O mnie</a></li>
+                                        <li>
+                                            <a href="{{ site.url }}/"
+                                            {% if page.url == '/' %}class="current"{% endif %}>Strona główna</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ site.url }}/archiwum-postow"
+                                            {% if page.url == '/archiwum-postow' %}class="current"{% endif %}>Archiwum postów</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ site.url }}/blog/kategorie"
+                                            {% if page.url == '/blog\\kategorie' %}class="current"{% endif %}>Kategorie</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ site.url }}/blog/tagi"
+                                            {% if page.url == '/blog\\tagi' %}class="current"{% endif %}>Tagi</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ site.url }}/o-mnie"
+                                            {% if page.url == '/o-mnie' %}class="current"{% endif %}>O mnie</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
