@@ -19,6 +19,10 @@ h2 {
     font-size: 50px;
 }
 
+a {
+    transition: color .2s ease-in-out;
+}
+
 h1[id] {
     margin-bottom: .4em;
 }
