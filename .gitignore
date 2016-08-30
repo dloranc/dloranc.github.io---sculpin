@@ -11,3 +11,6 @@ sculpin.phar
 *.sublime-project
 *.sublime-workspace
 .idea/
+
+node_modules/
+source/css/

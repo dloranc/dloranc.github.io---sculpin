@@ -1,0 +1,27 @@
+{
+  "name": "dloranc.github.io",
+  "version": "1.0.0",
+  "description": "Dawid Loranc's blog",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dloranc/dloranc.github.io---sculpin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dloranc/dloranc.github.io---sculpin/issues"
+  },
+  "homepage": "https://github.com/dloranc/dloranc.github.io---sculpin#readme"
+}
