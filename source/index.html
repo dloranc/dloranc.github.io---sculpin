@@ -18,6 +18,14 @@ use:
         <div class="post-content">
             {{ post.blocks.content|raw }}
         </div>
+        {% if post.meta.categories %}
+            <p class="categories">
+            Kategorie:
+            {% for category in post.meta.categories %}
+            <a href="{{ site.url }}/blog/kategorie/{{ category|url_encode(true) }}" class="categories__category-item">{{ category }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+            </p>
+        {% endif %}
         {% if post.meta.tags %}
             <p class="tags">
             Tagi:
