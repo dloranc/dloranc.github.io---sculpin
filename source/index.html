@@ -8,19 +8,21 @@ use:
     - posts
 ---
 {% for post in page.pagination.items %}
-    <article>
-        <header>
-            <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
-            <h4 class="date">{{ post.date | date('d.m.Y') }}</h4>
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-header__title">
+                <a href="{{ site.url }}{{ post.url }}" class="post-header__title-anchor">{{ post.title }}</a>
+            </h1>
+            <h4 class="post-header__date">{{ post.date | date('d.m.Y') }}</h4>
         </header>
-        <div>
+        <div class="post-content">
             {{ post.blocks.content|raw }}
         </div>
         {% if post.meta.tags %}
             <p class="tags">
             Tagi:
             {% for tag in post.meta.tags %}
-            <a href="{{ site.url }}/blog/tagi/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ site.url }}/blog/tagi/{{ tag|url_encode(true) }}" class="tags__tag-item">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
             </p>
         {% endif %}

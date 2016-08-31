@@ -5,19 +5,19 @@
 {% endblock %}
 
 {% block content_wrapper %}
-    <article>
-        <header>
-            <h1>{{ page.title }}</h1>
-            <h4 class="date">{{ page.date | date('d.m.Y') }}</h4>
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__header__title">{{ page.title }}</h1>
+            <h4 class="post__header__date">{{ page.date | date('d.m.Y') }}</h4>
         </header>
-        <div>
+        <div class="post-content">
             {{ page.blocks.content|raw }}
         </div>
         {% if page.categories %}
             <p class="categories">
             Kategorie:
             {% for category in page.categories %}
-            <a href="{{ site.url }}/blog/kategorie/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ site.url }}/blog/kategorie/{{ category|url_encode(true) }}" class="categories__category-item">{{ category }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
             </p>
         {% endif %}
@@ -25,7 +25,7 @@
             <p class="tags">
             Tagi:
             {% for tag in page.tags %}
-            <a href="{{ site.url }}/blog/tagi/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ site.url }}/blog/tagi/{{ tag|url_encode(true) }}" class="tags__tag-item">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
             </p>
         {% endif %}

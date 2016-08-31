@@ -1,12 +1,12 @@
-article header h1 {
+.post-header__title {
     margin-bottom: .2em;
 }
 
-article header h1 a:hover {
+.post-header__title-anchor:hover {
     text-decoration: none;
 }
 
-article header .date {
+.post-header__date {
     font-weight: 300;
     color: #9a9a9a;
     margin-bottom: 1em;
