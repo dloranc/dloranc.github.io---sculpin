@@ -37,8 +37,8 @@ use:
     </article>
 {% endfor %}
 {% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav>
-        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Nowsze posty</a>{% endif %}<br />
-        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Starsze posty</a>{% endif %}<br />
+    <nav class="pagination">
+        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}" class="pagination__previous">Nowsze posty</a>{% endif %}<br />
+        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}" class="pagination__next">Starsze posty</a>{% endif %}<br />
     </nav>
 {% endif %}

@@ -9,7 +9,7 @@ use:
 <div class="categories">
     <p>
         {% for category,posts in data.posts_categories %}
-        <a href="{{ site.url }}/blog/kategorie/{{ category|url_encode(true) }}">{{ category }}</a>
+        <a href="{{ site.url }}/blog/kategorie/{{ category|url_encode(true) }}" class="categories_category-item">{{ category }}</a>
         {% endfor %}
     </p>
 </div>

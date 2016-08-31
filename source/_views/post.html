@@ -6,9 +6,9 @@
 
 {% block content_wrapper %}
     <article class="post">
-        <header class="post__header">
-            <h1 class="post__header__title">{{ page.title }}</h1>
-            <h4 class="post__header__date">{{ page.date | date('d.m.Y') }}</h4>
+        <header class="post-header">
+            <h1 class="post-header__title">{{ page.title }}</h1>
+            <h4 class="post-header__date">{{ page.date | date('d.m.Y') }}</h4>
         </header>
         <div class="post-content">
             {{ page.blocks.content|raw }}
@@ -31,13 +31,13 @@
         {% endif %}
 
         {% if page.previous_post or page.next_post %}
-            <nav class="article">
+            <nav class="pagination">
                 <ul>
                     {% if page.next_post %}
-                        <li>Następny post: <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a></li>
+                        <li class="pagination__next">Następny post: <a class="pagination__next-anchor" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="pagination__title">{{ page.next_post.title }}</span></a></li>
                     {% endif %}
                     {% if page.previous_post %}
-                        <li>Poprzedni post: <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a></li>
+                        <li class="pagination__previous">Poprzedni post: <a class="pagination__previous-anchor" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="pagination__title">{{ page.previous_post.title }}</span></a></li>
                     {% endif %}
                 </ul>
             </nav>
