@@ -3,6 +3,7 @@
 # in a template to get the contents of the `title` key.
 title: Dawid Loranc
 subtitle: Fighting against the curse of dimensionality.
+url: http://dloranc.github.io
 
 # Insert your disqus shortname
 disqus:
