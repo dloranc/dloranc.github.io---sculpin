@@ -16,7 +16,11 @@ use:
             <h4 class="post-header__date">{{ post.date | date('d.m.Y') }}</h4>
         </header>
         <div class="post-content">
-            {{ post.blocks.content|raw }}
+            {% if post.meta.excerpt %}
+                {{ post.meta.excerpt|raw }}
+            {% else %}
+                {{ post.blocks.content|raw }}
+            {% endif %}
         </div>
         {% if post.meta.categories %}
             <p class="post-categories">
