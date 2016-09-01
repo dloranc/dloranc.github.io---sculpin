@@ -34,10 +34,10 @@
             <nav class="pagination">
                 <ul>
                     {% if page.next_post %}
-                        <li class="pagination__next">Następny post: <a class="pagination__next-anchor" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="pagination__title">{{ page.next_post.title }}</span></a></li>
+                        <li class="pagination__next"><a class="pagination__next-anchor" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="pagination__title">Następny post</span></a></li>
                     {% endif %}
                     {% if page.previous_post %}
-                        <li class="pagination__previous">Poprzedni post: <a class="pagination__previous-anchor" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="pagination__title">{{ page.previous_post.title }}</span></a></li>
+                        <li class="pagination__previous"><a class="pagination__previous-anchor" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="pagination__title">Poprzedni post</span></a></li>
                     {% endif %}
                 </ul>
             </nav>
