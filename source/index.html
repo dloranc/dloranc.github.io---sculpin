@@ -19,7 +19,7 @@ use:
             {{ post.blocks.content|raw }}
         </div>
         {% if post.meta.categories %}
-            <p class="categories">
+            <p class="post-categories">
             Kategorie:
             {% for category in post.meta.categories %}
             <a href="{{ site.url }}/blog/kategorie/{{ category|url_encode(true) }}" class="categories__category-item">{{ category }}</a>{% if not loop.last %}, {% endif %}
@@ -27,7 +27,7 @@ use:
             </p>
         {% endif %}
         {% if post.meta.tags %}
-            <p class="tags">
+            <p class="post-tags">
             Tagi:
             {% for tag in post.meta.tags %}
             <a href="{{ site.url }}/blog/tagi/{{ tag|url_encode(true) }}" class="tags__tag-item">{{ tag }}</a>{% if not loop.last %}, {% endif %}
