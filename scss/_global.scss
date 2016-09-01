@@ -59,6 +59,10 @@ a {
 p {
     line-height: 1.5;
     margin: 0 0 1em;
+
+    code {
+        font-size: 1em;
+    }
 }
 
 img {
@@ -70,5 +74,14 @@ img {
         margin: 0 auto;
         width: 100%;
         height: auto;
+    }
+}
+
+pre {
+    padding: 0;
+
+    code {
+        font-size: 1.2em;
+        line-height: 1.4;
     }
 }
