@@ -9,18 +9,18 @@
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="DLoranc" />
         <meta name="twitter:creator" content="DLoranc" />
-        <meta property="og:title" content="{{ page.title }} &mdash; {{ site.title }}" />
         <meta property="twitter:title" content="{{ page.title }} &mdash; {{ site.title }}" />
+        {% if page.url == '/' or page.url == '/o-mnie' %}
+        <meta property="twitter:image" content="{{ site.url }}/images/avatar.jpg" />
+        <meta property="twitter:description" content="Blog o machine learningu i sztucznej inteligencji." />
+        {% endif %}
+        <meta property="og:title" content="{{ page.title }} &mdash; {{ site.title }}" />
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         <meta property="og:site_name" content="Dawid Loranc - blog o ML i AI"/>
         <meta property="og:locale" content="pl_PL" />
         {% if page.url == '/' or page.url == '/o-mnie' %}
         <meta property="og:image" content="{{ site.url }}/images/blog_thumbnail.png" />
-        <meta property="twitter:image" content="{{ site.url }}/images/avatar.jpg" />
-        {% endif %}
-        {% if page.url == '/' or page.url == '/o-mnie' %}
         <meta property="og:description" content="Blog o machine learningu i sztucznej inteligencji." />
-        <meta property="twitter:description" content="Blog o machine learningu i sztucznej inteligencji." />
         {% endif %}
         {% block head_meta %}
             <meta name="robots" content="noindex, follow">
