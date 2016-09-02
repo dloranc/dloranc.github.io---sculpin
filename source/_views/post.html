@@ -2,6 +2,12 @@
 
 {% block head_meta %}
     <meta name="robots" content="index, follow">
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}/images/posts_thumbnails/{{ page.image }}" />
+    {% endif %}
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt }}" />
+    {% endif %}
 {% endblock %}
 
 {% block content_wrapper %}

@@ -5,6 +5,7 @@ categories:
     - Przepisy
 tags:
     - scikit-learn
+image: kfold_stratifiedkfold.png
 excerpt: Krótka notka o wykorzystaniu KFold i StratifiedKFold z biblioteki <strong>scikit-learn</strong> do dzielenia zbioru danych.
 
 ---
