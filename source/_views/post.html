@@ -31,7 +31,7 @@
             <p class="post-categories">
             Kategorie:
             {% for category in page.categories %}
-            <a href="{{ site.url }}/blog/kategorie/{{ category|url_encode(true) }}" class="categories__category-item">{{ category }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ site.url }}/blog/kategorie/{{ category|url_encode(true) }}" class="post-categories__item">{{ category }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
             </p>
         {% endif %}
@@ -39,7 +39,7 @@
             <p class="post-tags">
             Tagi:
             {% for tag in page.tags %}
-            <a href="{{ site.url }}/blog/tagi/{{ tag|url_encode(true) }}" class="tags__tag-item">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ site.url }}/blog/tagi/{{ tag|url_encode(true) }}" class="post-tags__item">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
             </p>
         {% endif %}
