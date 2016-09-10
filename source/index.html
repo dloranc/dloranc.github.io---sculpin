@@ -15,7 +15,9 @@ use:
             </h1>
             <h4 class="post-header__date">{{ post.date | date('d.m.Y') }}</h4>
             {% if post.meta.image %}
-            <img src="{{ site.url }}/images/posts_thumbnails/{{ post.meta.image }}" alt="{{ post.title }}" class="post-header__thumbnail"/>
+            <a href="{{ site.url }}{{ post.url }}">
+                <img src="{{ site.url }}/images/posts_thumbnails/{{ post.meta.image }}" alt="{{ post.title }}" class="post-header__thumbnail"/>
+            </a>
             {% endif %}
         </header>
         <div class="post-content">
