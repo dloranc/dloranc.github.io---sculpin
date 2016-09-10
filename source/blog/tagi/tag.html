@@ -28,7 +28,9 @@ pagination:
   {% set month = this_month %}
   <h2 class="tags__archive-date">{{ month }}.{{ year }}</h2>
 {% endif %}
-<a href="{{ site.url }}{{ post.url }}" class="tags__link">{{ post.title }} &mdash; <small>{{ post.date | date("d.m.Y") }}</small></a>
+<a href="{{ site.url }}{{ post.url }}" class="tags__link">
+  {{ post.title }} &mdash; <small>{{ post.date | date("d.m.Y") }}</small>
+</a>
 {% endfor %}
 </div>
 
