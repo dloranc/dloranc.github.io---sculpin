@@ -32,16 +32,19 @@ pagination:
 </article>
 {% endfor %}
 
-<div>
 {% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav class="article clearfix">
+    <nav class="pagination">
     {% if page.pagination.previous_page %}
-    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Poprzednia strona"><span class="title">Poprzednia strona</span></a>
+    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Poprzednia strona">
+      <span class="title">Poprzednia strona</span>
+    </a>
     {% endif %}
     {% if page.pagination.next_page %}
-    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Następna strona</span></a>
+    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page">
+      <span class="title">Następna strona</span>
+    </a>
     {% endif %}
     </nav>
 {% endif %}
-</div>
+
 {% endblock content %}
