@@ -4,4 +4,11 @@ permalink: none
 title: Błąd 404
 ---
 
-<h2>Nie znaleziono strony</h2>
+<div class="not-found">
+	<h2 class="not-found__title">Błąd 404</h2>
+	<p class="not-found__text">
+		Nie znaleziono szukanej strony. Wróć na <a href="{{ site.url }}">stronę główną</a>
+		albo skorzystaj z wyszukiwarki Google'a wykorzystując
+		<code>site:{{ site.url|replace({'http://' : '', 'https://' : ''}) }}</code> przed szukanym hasłem.
+	</p>
+</div>
