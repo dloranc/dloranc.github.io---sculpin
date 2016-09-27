@@ -6,9 +6,9 @@ categories:
 tags:
     - scikit-learn
 image: label_encoder.png
-excerpt: Prosty sposób na zamianę danych kategorycznych na liczbowe.
+excerpt: Prosty sposób na zamianę danych w zmiennych kategorycznych na liczbowe za pomocą metody kodowania etykiet (label encoding).
 ---
-Czasami, przetwarzając dane, mamy do czynienia ze zmiennymi, które są typu tekstowego i przyporządkowują obserwację statystyczną do jakiejś klasy. Przykładowo, mamy do czynienia z uczniami pewnej szkoły, którzy chodzą do różnych klas (1A, 1B, 1C, 2A, 2B, 2C itd.). Chcemy takie zmienne zamienić na liczby w celu możliwości ich dalszego przetwarzania przez jakiś wybrany algorytm np. random forest. Można do tego użyć klasy `LabelEncoder` z biblioteki __scikit-learn__.
+Czasami, przetwarzając zbiór danych, mamy do czynienia ze zmiennymi, które są typu tekstowego i przyporządkowują obserwację statystyczną do jakiejś klasy. Przykładowo, mamy do czynienia z uczniami pewnej szkoły, którzy chodzą do różnych klas (1A, 1B, 1C, 2A, 2B, 2C itd.). Chcemy takie zmienne zamienić na liczby w celu możliwości ich dalszego przetwarzania przez jakiś wybrany algorytm np. random forest. Można do tego użyć klasy `LabelEncoder` z biblioteki __scikit-learn__.
 
 
 ```python
