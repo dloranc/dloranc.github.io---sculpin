@@ -8,7 +8,7 @@ var del = require('del');
 
 gulp.task('sass', function () {
     gulp.src('./scss/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./source/css'));
 });
 
