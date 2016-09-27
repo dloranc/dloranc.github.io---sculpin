@@ -4,7 +4,7 @@
 title: Dawid Loranc
 subtitle: "„What I cannot create, I do not understand.” - Richard Feynman"
 url: https://dloranc.github.io
-site.google_analytics_tracking_id: 'UA-84833721-1'
+google_analytics_tracking_id: UA-84833721-1
 
 # Insert your disqus shortname
 disqus:
