@@ -9,7 +9,11 @@
         <meta charset="utf-8">
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if page.excerpt %}
+        <meta name="description" content="{{ page.excerpt }}">
+        {% else %}
         <meta name="description" content="Blog o machine learningu, data science, statystyce i sztucznej inteligencji.">
+        {% endif %}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="DLoranc" />
         <meta name="twitter:creator" content="DLoranc" />
