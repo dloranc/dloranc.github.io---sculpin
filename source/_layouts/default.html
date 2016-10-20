@@ -10,7 +10,7 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if page.excerpt %}
-        <meta name="description" content="{{ page.excerpt }}">
+        <meta name="description" content="{{ page.excerpt|striptags }}">
         {% else %}
         <meta name="description" content="Blog o machine learningu, data science, statystyce i sztucznej inteligencji.">
         {% endif %}
@@ -24,7 +24,7 @@
         <meta property="twitter:image" content="{{ site.url }}/images/avatar.jpg" />
         {% endif %}
         {% if page.excerpt %}
-        <meta property="twitter:description" content="{{ page.excerpt }}" />
+        <meta property="twitter:description" content="{{ page.excerpt|striptags }}" />
         {% else %}
         <meta property="twitter:description" content="Blog o machine learningu, data science, statystyce i sztucznej inteligencji." />
         {% endif %}
@@ -38,7 +38,7 @@
         <meta property="og:image" content="{{ site.url }}/images/blog_thumbnail.png" />
         {% endif %}
         {% if page.excerpt %}
-        <meta property="og:description" content="{{ page.excerpt }}" />
+        <meta property="og:description" content="{{ page.excerpt|striptags }}" />
         {% else %}
         <meta property="og:description" content="Blog o machine learningu, data science, statystyce i sztucznej inteligencji." />
         {% endif %}
