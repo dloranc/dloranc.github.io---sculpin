@@ -22,7 +22,7 @@ generator: [posts_category_index]
             <link href="{{ site.url }}{{ post.url }}"/>
             <updated>{{ post.date|date('c') }}</updated>
             <id>{{ site.url }}{{ post.url }}</id>
-            <content type="html"><![CDATA[{{ post.blocks.content|raw }}]]></content>
+            <content type="html"><![CDATA[{{ post.excerpt|raw }}]]></content>
         </entry>
     {% endfor %}
 </feed>
