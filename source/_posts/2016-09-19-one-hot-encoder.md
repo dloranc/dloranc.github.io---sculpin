@@ -5,7 +5,6 @@ categories:
     - Przepisy
 tags:
     - scikit-learn
-    - pandas
 image: one_hot_encoder.jpg
 excerpt: Bo grunt to gorące jedynki :)
 draft: true
