@@ -7,7 +7,6 @@ tags:
     - scikit-learn
 image: one_hot_encoder.jpg
 excerpt: Bo grunt to gorące jedynki :)
-draft: true
 ---
 Ten wpis jest kontynuacją poprzedniego wpisu o [LabelEncoder](/blog/2016/09/10/label-encoder). Tym razem będzie o technice zwanej __one hot encoding__ albo [kod 1 z n](https://pl.wikipedia.org/wiki/Kod_1_z_n). Mając kategorie zamienione na odpowiadające im liczby możemy zamienić je także na kilka kolumn (ich liczba zależy od tego ile jest kategorii), które zawierają zera i jedynki oznaczające odpowiednio czy dany wiersz należy do kategorii czy nie. Metodę tę stosujemy, gdy używamy algorytmu, który może mieć problem ze zmiennymi liczbowymi (bo zakładają jakiś porządek).
 
