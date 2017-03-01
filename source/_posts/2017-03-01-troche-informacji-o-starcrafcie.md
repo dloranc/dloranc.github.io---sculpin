@@ -16,7 +16,7 @@ Dołączam do tego wyścigu, ale prawdę mówiąc nie mam wielkich szans :) Gdzi
 
 ## Czym jest Starcraft?
 
-Starcraft 2 jest obecnie zdecydowanie najpopularniejszą e-sportową strategią czasu rzeczywistego. Możemy w niej grać trzema zróżnicowanymi rasami: Zergami, Protossami i Terranami. Zergowie to insektoidalna rasa, która potrafi się mutować. Srają gdzie popadnie. Terranie to natomiast ludzie. Mają czołgi i inne takie. Protossi to humanoidalna rasa połączona więziami telepatycznymi. Cali na złoto, ciągle gadają o umieraniu za Aiur.
+Starcraft 2 jest obecnie zdecydowanie najpopularniejszą e-sportową strategią czasu rzeczywistego. Możemy w niej grać trzema zróżnicowanymi rasami: Zergami, Protossami i Terranami. Zergowie to insektoidalna rasa, która potrafi się mutować. Srają gdzie popadnie. Terranie to natomiast ludzie. Mają czołgi i inne takie wesołe rzeczy. Protossi to humanoidalna rasa połączona więzami telepatycznymi. Cali na złoto, teleportacja to ich drugie imię, ciągle gadają o umieraniu za Aiur.
 
 Celem każdej rozgrywki jest zniszczenie wszystkich budynków przeciwnika. Nie trzeba niszczyć całej armii przeciwnika, wystarczy zrównać z ziemią każdy budynek. W grze może dojść także do remisu. Dokładnie nie pamiętam jak, ale przez chyba trzy minuty żadna ze stron nie może zbierać surowców, zniszczyć niczego ani wybudować. Rzadko się to zresztą zdarza (raz mi się udało).
 
