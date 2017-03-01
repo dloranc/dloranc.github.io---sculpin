@@ -1,5 +1,6 @@
 ---
 title: Trochę informacji o Starcrafcie i moje plany
+date: 2017-02-15T22:08:00+01:00
 
 categories:
     - Daj Sie Poznac 2017
