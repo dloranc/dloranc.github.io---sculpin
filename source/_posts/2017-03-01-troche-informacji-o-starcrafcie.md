@@ -60,3 +60,5 @@ Przede wszystkim w Starcrafcie większość informacji jest niedostępnych dla g
 Na pewno chciałbym wytrenować bota, który chociaż potrafi walczyć praktycznie każdą możliwą kompozycją jednostek dla danej rasy. Do tego chciałbym zrealizować scenariusz uproszczonej rozgrywki, w której bot może budować tylko podstawową jednostkę walczącą (Zerglinga, Zealota, Marine'a).
 
 Na razie nie udostępniono środowiska (ponoć ma być w pierwszym kwartale 2017, czyli w tym miesiącu), więc na razie będę bawił się z replayami, co i tak potem będzie konieczne by trenować sieci neuronowe. Jeśli jednak skończą mi się pomysły co robić z replayami to prawdopodobnie spróbuję napisać uproszczoną wersję Starcrafta w JS na canvasie i zrobić jakieś proste scenariusze do tego.
+
+Wszelki kod będzie na moim githubie w repozytorium [starcraft-ai](https://github.com/dloranc/starcraft-ai).
