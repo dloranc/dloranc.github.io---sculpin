@@ -16,7 +16,7 @@ generator: [posts_tag_index]
         </author>
     {% endif %}
     <generator uri="http://sculpin.io/">Sculpin</generator>
-    {% for post in page.tag_posts|slice(0, 20) %}
+    {% for post in page.tag_posts %}
         <entry>
             <title type="html"><![CDATA[{{ post.title }}]]></title>
             <link href="{{ site.url }}{{ post.url }}"/>
