@@ -2,8 +2,9 @@
 title: Daj Się Poznać 2017
 
 categories:
-    - Daj Sie Poznac 2017
     - Sprawy organizacyjne
+tags:
+    - DSP2017
 image: daj_sie_poznac_2017.jpg
 excerpt: Post informacyjny o udziale w konkursie "Daj Się Poznać 2017".
 ---
