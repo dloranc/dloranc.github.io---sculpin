@@ -20,6 +20,7 @@ permalink: atom.xml
         <entry>
             <title type="html"><![CDATA[{{ post.title }}]]></title>
             <link href="{{ site.url }}{{ post.url }}"/>
+            <published>{{ post.date|date('c') }}</published>
             <updated>{{ post.date|date('c') }}</updated>
             <id>{{ site.url }}{{ post.url }}</id>
             <content type="html"><![CDATA[{{ post.excerpt }}]]></content>

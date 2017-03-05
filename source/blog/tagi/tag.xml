@@ -21,6 +21,7 @@ generator: [posts_tag_index]
             <title type="html"><![CDATA[{{ post.title }}]]></title>
             <link href="{{ site.url }}{{ post.url }}"/>
             <updated>{{ post.date|date('c') }}</updated>
+            <published>{{ post.date|date('c') }}</published>
             <id>{{ site.url }}{{ post.url }}</id>
             <content type="html"><![CDATA[{{ post.excerpt|raw }}]]></content>
         </entry>
