@@ -1,6 +1,6 @@
 ---
 title: Wiedza, wiedza, wiedza
-date: 2017-03-05T20:00:00+01:00
+date: 2017-03-05T22:00:00+01:00
 
 tags:
     - DSP2017
