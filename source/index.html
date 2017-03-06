@@ -44,9 +44,24 @@ use:
         {% endif %}
     </article>
 {% endfor %}
+
 {% if page.pagination.previous_page or page.pagination.next_page %}
     <nav class="pagination">
-        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}" class="pagination__previous">Nowsze posty</a>{% endif %}<br />
-        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}" class="pagination__next">Starsze posty</a>{% endif %}<br />
+        <ul>
+            {% if page.pagination.previous_page %}
+                <li class="pagination__next">
+                    <a class="pagination__next-anchor" href="{{ site.url }}{{ page.pagination.previous_page.url }}">
+                        <span class="pagination__title">Nowsze posty</span>
+                    </a>
+                </li>
+            {% endif %}
+            {% if page.pagination.next_page %}
+                <li class="pagination__previous">
+                    <a class="pagination__previous-anchor" href="{{ site.url }}{{ page.pagination.next_page.url }}">
+                        <span class="pagination__title">Starsze posty</span>
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
     </nav>
 {% endif %}
