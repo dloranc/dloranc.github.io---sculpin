@@ -23,7 +23,8 @@ generator: [posts_tag_index]
             <published>{{ post.date|date('c') }}</published>
             <updated>{{ post.date|date('c') }}</updated>
             <id>{{ site.url }}{{ post.url }}</id>
-            <content type="html"><![CDATA[<img src="{{ site.url }}/images/posts_thumbnails/{{ post.image }}"/>{{ post.excerpt }}]]></content>
+            <content type="html"><![CDATA[{% if post.image %}<img src="{{ site.url }}/images/posts_thumbnails/{{ post.image }}"/>{% endif %}
+            {% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content|striptags|slice(0, 130)|trim }}...{% endif %}]]></content>
         </entry>
     {% endfor %}
 </feed>
