@@ -1,21 +1,27 @@
+.post {
+    margin-bottom: 4.5em;
+}
+
 .post-header__title {
     margin-bottom: 0;
 }
 
 .post-header__title-anchor:hover {
     text-decoration: none;
+    border: 0;
 }
 
 .post-header__date {
     font-weight: 300;
     color: #9a9a9a;
     margin-bottom: 1em;
+    padding-bottom: .6em;
     margin-top: 0;
     font-size: 22px;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .post-header__thumbnail {
-    margin-bottom: 1em;
     width: 100%;
 }
 
