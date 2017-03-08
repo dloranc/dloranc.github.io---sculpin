@@ -25,6 +25,7 @@ generator: [posts_category_index]
             <id>{{ site.url }}{{ post.url }}</id>
             <content type="html"><![CDATA[{% if post.image %}<img src="{{ site.url }}/images/posts_thumbnails/{{ post.image }}"/>{% endif %}
             {% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content|striptags|slice(0, 130)|trim }}...{% endif %}]]></content>
+            <summary>{% if post.excerpt %}{{ post.excerpt|raw }}{% else %}{{ post.content|striptags|slice(0, 130)|trim }}...{% endif %}</summary>
         </entry>
     {% endfor %}
 </feed>
