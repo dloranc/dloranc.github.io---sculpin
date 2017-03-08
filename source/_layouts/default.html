@@ -96,7 +96,7 @@
                                     <ul class="nav">
                                         <li>
                                             <a href="{{ site.url }}/"
-                                            {% if page.url == '/' %}class="current"{% endif %}>Strona główna</a>
+                                            {% if page.url == '/' or page.url == '/.' %}class="current"{% endif %}>Strona główna</a>
                                         </li>
                                         <li>
                                             <a href="{{ site.url }}/archiwum-postow"
