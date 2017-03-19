@@ -22,6 +22,6 @@ Cześć! Nazywam się Dawid Loranc. Programować zacząłem jeszcze w gimnazjum 
 
 ![Daj Się Poznać 2017](/images/posts_thumbnails/daj_sie_poznac_2017.jpg)
 
-Obecnie biorę udział w konkursie ["Daj Się Poznać 2017"](devstyle.pl/daj-sie-poznac) z projektem, który polega na stworzeniu bota grającego w Starcrafta 2 - popularnego e-sportowego RTS-a.
+Obecnie biorę udział w konkursie ["Daj Się Poznać 2017"](http://devstyle.pl/daj-sie-poznac) z projektem, który polega na stworzeniu bota grającego w Starcrafta 2 - popularnego e-sportowego RTS-a.
 
 [Repozytorium mojego projektu](https://github.com/dloranc/starcraft-ai)
