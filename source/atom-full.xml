@@ -1,0 +1,31 @@
+---
+use: ["posts"]
+permalink: atom-full.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[{{ site.title }}]]></title>
+    <link href="{{ site.url }}/atom.xml" rel="self"/>
+    <link href="{{ site.url }}/"/>
+    <updated>{{ site.calculated_date | date('c') }}</updated>
+    <id>{{ site.url }}/</id>
+    {% if site.author or site.email %}
+        <author>
+            {% if site.author %}<name><![CDATA[{{ site.author }}]]></name>{% endif %}
+            {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
+        </author>
+    {% endif %}
+    <generator uri="http://sculpin.io/">Sculpin</generator>
+    {% for post in data.posts|slice(0, 20) %}
+        <entry>
+            <title type="html"><![CDATA[{{ post.title }}]]></title>
+            <link href="{{ site.url }}{{ post.url }}"/>
+            <published>{{ post.date|date('c') }}</published>
+            <updated>{{ post.date|date('c') }}</updated>
+            <id>{{ site.url }}{{ post.url }}</id>
+            <content type="html"><![CDATA[{% if post.image %}<img src="{{ site.url }}/images/posts_thumbnails/{{ post.image }}"/>{% endif %}
+            {{ post.content|striptags('<pre>')|raw }}]]></content>
+            <summary>{{ post.content|striptags('<pre>')|raw }}</summary>
+        </entry>
+    {% endfor %}
+</feed>
