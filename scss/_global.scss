@@ -59,10 +59,15 @@ a {
 p {
     line-height: 1.5;
     margin: 0 0 1em;
+}
 
-    code {
-        font-size: 1em;
-    }
+li code,
+p code {
+    font-size: 1em;
+}
+
+li {
+    line-height: 1.5;
 }
 
 img {
