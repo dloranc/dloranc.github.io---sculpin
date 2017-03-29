@@ -4,6 +4,10 @@
     <meta name="robots" content="index, follow">
 {% endblock %}
 
+{% block head_scripts %}
+<script type="text/javascript">fbq('track', 'ViewContent');</script>
+{% endblock %}
+
 {% block content_wrapper %}
     <article class="post">
         <header class="post-header">
