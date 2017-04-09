@@ -10,7 +10,6 @@ tags:
     - bwapi
 image: 5_pool.jpg
 excerpt: Dalszy ciąg zabaw z pisaniem bota do Starcrafta: Brood War. Stworzyłem prostego bota w Javie potrafiącego zrobić 5 poola.
-draft: true
 ---
 Od ostatniego postu o projekcie, siedziałem dość sporo czasu nad botem próbując napisać coś co wykonuje jakąś prostą strategię. Po instalacji BWAPI bot uruchamia się i gra ze standardowym botem zawartym w grze. Jako że znałem już od lat defaultowego bota i jego słabości postanowiłem, że mój bot będzie wykonywał prostą strategię zwaną jako 5 pool z pewną modyfikacją.
 
