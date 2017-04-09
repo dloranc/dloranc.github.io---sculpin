@@ -133,7 +133,7 @@ private void attack(Unit myUnit) {
 }
 ```
 
-Sprawa jest prosta, jeśli drona scoutująca wykryła jakieś wrogie budynki (czyli bazę przeciwnika) to zerglingi je atakują. Jeśli nie, to atakowana jest pozycja w której znajdować się powinna baza przeciwnika. Jeśli jej nie znamy, to zerglingi biegają po mapie szukając wroga i jego budynków.
+Sprawa jest prosta, jeśli drona scoutująca wykryła jakieś wrogie budynki (czyli bazę przeciwnika) to zerglingi je atakują. Jeśli nie, to atakowana jest pozycja w której znajdować się powinna baza przeciwnika. Jeśli jej nie znamy, to zerglingi biegają po mapie szukając wroga i jego budynków. Ta liczba 32 przy losowaniu pozycji to rozmiar jednego Tile'a.
 
 ## Podsumowanie
 
