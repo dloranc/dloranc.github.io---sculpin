@@ -9,7 +9,7 @@ tags:
     - starcraft
     - bwapi
 image: 5_pool.jpg
-excerpt: Prosty bot w Javie potrafiący zrobić 5 poola w Starcraft: Brood War.
+excerpt: Dalszy ciąg zabaw z pisaniem bota do Starcrafta: Brood War. Stworzyłem prostego bota w Javie potrafiącego zrobić 5 poola.
 draft: true
 ---
 Od ostatniego postu o projekcie, siedziałem dość sporo czasu nad botem próbując napisać coś co wykonuje jakąś prostą strategię. Po instalacji BWAPI bot uruchamia się i gra ze standardowym botem zawartym w grze. Jako że znałem już od lat defaultowego bota i jego słabości postanowiłem, że mój bot będzie wykonywał prostą strategię zwaną jako 5 pool z pewną modyfikacją.
@@ -17,7 +17,7 @@ Od ostatniego postu o projekcie, siedziałem dość sporo czasu nad botem próbu
 Wygląda ona następująco:
 
 1. Jeśli jest 50 minerałów, to stwórz dronę.
-2. Weź stworzoną dronę i wyślij ją do potencjalnej bazy przeciwnika. Mapy na których boty grają w SSCAIT mają od dwóch do maksymalnie czterech możliwych lokacji w których mogą być bazy, więc drona może być posłana do jednej, dwóch lub trzech lokacji w zależności od mapy.
+2. Weź stworzoną dronę i wyślij ją do potencjalnej bazy przeciwnika. Mapy na których boty grają w [SSCAIT](http://sscaitournament.com) mają od dwóch do maksymalnie czterech możliwych lokacji w których mogą być bazy, więc drona może być posłana do jednej, dwóch lub trzech lokacji w zależności od mapy.
 3. Jeśli jest 200 minerałów i pięć dron to stwórz spawning poola.
 4. Jeśli drona napotka bazę przeciwnika, niech zaatakuje najbliższy budynek po czym niech ucieknie z powrotem do swojej bazy zbierać minerały.
 5. Jeśli jest już spawning pool zbudowany, niech tworzą się zerglingi (i w razie czego overlordy jak nie da się robić zerglingów, bo został osiągnięty limit jednostek) i niech atakują bazę przeciwnika.
