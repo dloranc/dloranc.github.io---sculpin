@@ -6,6 +6,7 @@ categories:
     - Projekty
 tags:
     - DSP2017
+    - starcraft
 image: about_starcraft.jpg
 excerpt: Post wyjaśniający trochę rzeczy na temat Starcrafta 2 dla osób, które w tę grę nigdy nie grały. Do tego jeszcze napisałem o moich planach związanych z projektem w ramach "Daj Się Poznać 2017".
 ---

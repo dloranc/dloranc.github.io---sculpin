@@ -7,6 +7,7 @@ categories:
 tags:
     - DSP2017
     - scrapy
+    - starcraft
 image: scrapy.jpg
 excerpt: Do projektu z machine learningu potrzeba dużo danych, które trzeba jakoś zdobyć. Dzisiaj o wykorzystaniu biblioteki Scrapy do tego celu.
 ---
