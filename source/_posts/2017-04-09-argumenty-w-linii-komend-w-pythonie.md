@@ -23,7 +23,7 @@ Powyższy przykład wyświetla argumenty jeden pod drugim. Wyrażenie warunkowe 
 
 ## docopt - czyli zaprzęgamy docstringi do pracy
 
-Do prostych rzeczy `sys.argv` wystarczy. Jeśli jednak chcemy zbudować narzędzie, które będzie intensywnie wykorzystywane w miejscu, które programiści lubią najbardziej, to musimy skorzystać z czegoś innego. Dość popularnym rozwiązaniem jest `argparse`. Ja skorzystałem jednak z narzędzia `docopt`, które wydaje mi się dość interesujące, gdyż argumenty buduje się za pomocą docstringa. Fajna sprawa.
+`sys.argv` nie pozwala jednak na wiele. Trzeba samemu zadbać o poprawną obsługę argumentów, a jeśli chcemy mieć pomoc (przy wywołaniu skryptu z --help) do naszego skryptu, to musimy pamiętać o jej zgodności z resztą kodu. Do prostych rzeczy `sys.argv` jednak wystarczy. Jeśli jednak chcemy zbudować narzędzie, które będzie intensywnie wykorzystywane w miejscu, które programiści lubią najbardziej (czyli w konsoli), to musimy skorzystać z czegoś innego. Dość popularnym rozwiązaniem jest `argparse`. Ja skorzystałem jednak z narzędzia `docopt`, które wydaje mi się dość interesujące, gdyż argumenty buduje się za pomocą docstringa. Fajna sprawa.
 
 Zaczynamy od instalacji narzędzia:
 
@@ -34,7 +34,7 @@ pip install docopt
 Napiszmy coś prostego, niech będzie to skrypt sumujący liczby. Na razie jednak nie sumujemy, zobaczymy z czym mamy do czynienia.
 
 ```python
-"""Sum.
+"""Sum integer values.
 
 Usage:
   sum.py <numbers>...
@@ -51,7 +51,14 @@ from docopt import docopt
 
 if __name__ == '__main__':
     arguments = docopt(__doc__, version='Sum 1.0')
-    print(arguments)
+
+    numbers = arguments['<numbers>']
+
+    try:
+        numbers = list(map(int, numbers))
+        print(sum(numbers))
+    except ValueError:
+        print('Cannot cast value(s) to integer.')
 ```
 
 Z zawartości docstringa łatwo się domyślić co wywołać i z jakimi argumentami mamy do czynienia. Nawiasy trójkątne oznaczają argumenty, myślniki (dwa lub jeden) to opcje, a trzy kropki oznaczają to, że argumenty mogą się powtarzać. Nawiasy w połączeniu z pionową kreską natomiast oznaczają wzajemnie wykluczające się opcje.
