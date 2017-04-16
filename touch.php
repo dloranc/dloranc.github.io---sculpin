@@ -10,9 +10,12 @@ $title = ucwords(str_replace('_', ' ', $argv[1]));
 $handle = fopen($file, 'w');
 $data = "---
 title: {$title}
-tags: []
+date: {$date}T22:40:00+01:00
 categories: []
-
+tags: []
+image: ?.jpg
+excerpt: ?
+draft: true
 ---
 
 ";
