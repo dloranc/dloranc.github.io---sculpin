@@ -141,12 +141,13 @@ Bot działa całkiem dobrze, trochę czasem głupieje na dużych mapach jak dron
 
 Można poprawić parę rzeczy:
 
-- Scoutować powinna stworzona drona, a nie wylosowana spośród tych początkowych.
-- Jeśli drona przeznaczona do budowania ma zamiar budować, to przed budowaniem powinna odnieść minerały jeśli jakieś zebrała. Teraz jest tak, że jeśli jakieś miała to są one tracone.
+- Zbieranie minerałów można zoptymalizować zgodnie z tym tematem na [TeamLiquid](http://www.teamliquid.net/forum/brood-war/484849-improving-mineral-gathering-rate-in-brood-war).
+- <strike>Scoutować powinna stworzona drona, a nie wylosowana spośród tych początkowych.</strike>
+- <strike>Jeśli drona przeznaczona do budowania ma zamiar budować, to przed budowaniem powinna odnieść minerały jeśli jakieś zebrała. Teraz jest tak, że jeśli jakieś miała to są one tracone.</strike>
 - <strike>Scout może być bardziej optymalny, drona powinna chodzić do baz które są najbliżej.</strike>
-- Czasami jak drona jedzie do ostatniej bazy na dużej mapie, a wyprodukowane zostają zerglingi, to wtedy poruszają się one w losowe miejsca na mapie, bo nie wiedzą gdzie jest baza przeciwnika. Można to poprawić wysyłając je do bazy do której zmierza drona, bo wiadomo już wtedy, że jest to ta właściwa baza.
+- <strike>Czasami jak drona jedzie do ostatniej bazy na dużej mapie, a wyprodukowane zostają zerglingi, to wtedy poruszają się one w losowe miejsca na mapie, bo nie wiedzą gdzie jest baza przeciwnika. Można to poprawić wysyłając je do bazy do której zmierza drona, bo wiadomo już wtedy, że jest to ta właściwa baza.</strike>
 - Zerglingi mogą lepiej walczyć, można zastosować priorytety, co atakować w pierwszej kolejności. Przydatne byłoby także wycofywanie ciężko rannych jednostek, by się zregenerowały.
-- Jeśli baza i budynki naokoło są zniszczone, a nie zostaje zakończona gra to znaczy, że gdzieś na mapie jest jakiś budynek, który został do zniszczenia. Zerglingi nawet nie szukają losowo tylko się gromadzą w jednym miejscu.
+- <strike>Jeśli baza i budynki naokoło są zniszczone, a nie zostaje zakończona gra to znaczy, że gdzieś na mapie jest jakiś budynek, który został do zniszczenia. Zerglingi nawet nie szukają losowo tylko się gromadzą w jednym miejscu.</strike>
 - Ogólnie, przydałoby się napisać jakąś klasę umożliwiającą wydawanie rozkazów jednostkom i anulowanie ich, gdy zajdą jakieś okoliczności.
 
 Sam kod też nie jest wysokich lotów. Aż prosi się o uprzątnięcie tego bajzlu. Przydałoby się wydzielić większość kodu do osobnych klas i stworzyć jakąś logikę realizowania build orderu.
