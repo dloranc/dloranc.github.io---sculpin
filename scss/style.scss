@@ -3,12 +3,16 @@
 @import "highlightjs/darcula";
 @import "fonts";
 @import "global";
+@import "layout/wrapper";
 @import "layout/header";
-@import "layout/main_content";
 @import "components/navbar";
 @import "components/post";
+@import "components/posts-archive";
 @import "components/pagination";
 @import "components/tags";
 @import "components/categories";
+@import "components/projects";
+@import "components/about-me";
+@import "components/cookie-policy";
 @import "components/avatar";
 @import "components/not-found";

@@ -1,0 +1,44 @@
+---
+layout: default
+title: Archiwum Postów
+generator: pagination
+use:
+    - posts
+
+---
+<div class="posts-archive">
+  {% set year = '0' %}
+  <h1>Archiwum Postów</h1>
+  {% for post in page.pagination.items %}
+  {% set this_year %}{{ post.date | date("Y") }}{% endset %}
+  {% if year != this_year %}
+    {% set month = '0' %}
+    {% set year = this_year %}
+  {% endif %}
+  {% set this_month %}{{ post.date | date("m") }}{% endset %}
+  {% if month != this_month %}
+    {% set month = this_month %}
+    <h2 class="archive-date">{{ month }}.{{ year }}</h2>
+  {% endif %}
+    <div class="archive">
+      <a href="{{ site.url }}{{ post.url }}" class="archive__title">{{ post.title }} &mdash; <small class="archive__date">{{ post.date | date("d.m.Y") }}</small></a>
+    </div>
+  {% endfor %}
+
+  <div>
+  {% if page.pagination.previous_page or page.pagination.next_page %}
+      <nav class="pagination clearfix">
+      {% if page.pagination.previous_page %}
+      <a class="pagination__previous-anchor" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Poprzednia strona">
+        <span class="pagination__title">Poprzednia strona</span>
+      </a>
+      {% endif %}
+      {% if page.pagination.next_page %}
+      <a class="pagination__next-anchor" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Następna strona">
+        <span class="pagination__title">Następna strona</span>
+      </a>
+      {% endif %}
+      </nav>
+  {% endif %}
+  </div>
+</div>

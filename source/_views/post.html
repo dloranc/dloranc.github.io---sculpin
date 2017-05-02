@@ -17,7 +17,7 @@
             <h1 class="post-header__title">{{ page.title }}</h1>
             <h4 class="post-header__date">{{ page.date | date('d.m.Y') }}</h4>
         </header>
-        <div class="post-content">
+        <div class="post-content wrapper">
             {{ page.blocks.content|raw }}
         </div>
         {% if page.categories %}

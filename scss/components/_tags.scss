@@ -1,5 +1,5 @@
 .tags {
-    margin-top: 1em;
+    @extend .wrapper;
 }
 
 .tags__archive-date {
@@ -14,6 +14,6 @@
 }
 
 .tags__link {
-	display: block;
-	padding: .5em 0;
+    display: block;
+    padding: .5em 0;
 }

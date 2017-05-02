@@ -3,25 +3,24 @@ layout: default
 title: O mnie
 
 ---
-# O mnie
+<div class="about-me">
+<h1>O mnie</h1>
 
-![Dawid Loranc - avatar](/images/avatar.jpg)
+<img src="/images/avatar.jpg" alt="Dawid Loranc - avatar">
 
-Cześć! Nazywam się Dawid Loranc. Programować zacząłem jeszcze w gimnazjum i od tej pory jest to moja pasja. Moim głównym językiem jest PHP, a na co dzień zajmuję się tworzeniem aplikacji internetowych. Niedawno zainteresowałem się uczeniem maszynowym, a tego bloga utworzyłem przede wszystkim po to żeby dzielić się doświadczeniem, przemyśleniami, a także by usystematyzować wiedzę na temat tej prężnie rozwijającej się dziedziny.
+<p>Cześć! Nazywam się Dawid Loranc. Programować zacząłem jeszcze w gimnazjum i od tej pory jest to moja pasja. Moim głównym językiem jest PHP, a na co dzień zajmuję się tworzeniem aplikacji internetowych. Niedawno zainteresowałem się uczeniem maszynowym, a tego bloga utworzyłem przede wszystkim po to żeby dzielić się doświadczeniem, przemyśleniami, a także by usystematyzować wiedzę na temat tej prężnie rozwijającej się dziedziny.</p>
 
-[Moje konto na Githubie](https://github.com/dloranc)
+<p><a href="https://github.com/dloranc">Moje konto na Githubie</a></p>
 
-[Moje konto na stackoverflow](http://stackoverflow.com/users/973469/dawid-loranc)
+<p><a href="http://stackoverflow.com/users/973469/dawid-loranc">Moje konto na stackoverflow</a></p>
 
-[Moje konto na Kaggle](https://www.kaggle.com/dloranc)
+<p><a href="https://www.kaggle.com/dloranc">Moje konto na Kaggle</a></p>
 
+<h1>Daj Się Poznać 2017</h1>
 
+<img src="/images/posts_thumbnails/daj_sie_poznac_2017.jpg" alt="Daj Się Poznać 2017">
 
+<p>Obecnie biorę udział w konkursie <a href="http://devstyle.pl/daj-sie-poznac">„Daj Się Poznać 2017”</a> z projektem, który polega na stworzeniu bota grającego w Starcrafta 2 - popularnego e-sportowego RTS-a.</p>
 
-# Daj Się Poznać 2017
-
-![Daj Się Poznać 2017](/images/posts_thumbnails/daj_sie_poznac_2017.jpg)
-
-Obecnie biorę udział w konkursie ["Daj Się Poznać 2017"](http://devstyle.pl/daj-sie-poznac) z projektem, który polega na stworzeniu bota grającego w Starcrafta 2 - popularnego e-sportowego RTS-a.
-
-[Repozytorium mojego projektu](https://github.com/dloranc/starcraft-ai)
+<a href="https://github.com/dloranc/starcraft-ai">Repozytorium mojego projektu</a>
+</div>

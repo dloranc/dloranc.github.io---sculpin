@@ -4,9 +4,9 @@ title: Tagi
 use:
     - posts_tags
 ---
+<div class="tags">
 <h1>Tagi</h1>
 
-<div class="tags">
 {% for tag, posts in data.posts_tags %}
 <a href="{{ site.url }}/blog/tagi/{{ tag|url_encode(true) }}" class="tags__item">{{ tag }}</a>
 {% else %}
