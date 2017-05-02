@@ -7,6 +7,7 @@ categories:
 tags:
     - DSP2017
     - python
+    - multi-armed-bandit
     - reinforcement-learning
 image: multi_armed_bandit_attack.jpg
 excerpt: Post o multi-armed bandit problem - ciekawym problemie reinforcement learningu.
