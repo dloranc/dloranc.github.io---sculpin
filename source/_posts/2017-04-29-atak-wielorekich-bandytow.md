@@ -65,7 +65,8 @@ class Bandit:
         self.epsilon = epsilon
         self.history = []
 
-        self.true_reward = [np.random.randn() for _ in range(self.arms)] # random values from normal distribution
+        # random values from normal distribution
+        self.true_reward = [np.random.randn() for _ in range(self.arms)]
         self.rewards = [[] for _ in xrange(self.arms)]
 
     def get_means(self):
