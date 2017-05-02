@@ -16,4 +16,8 @@
 .tags__link {
     display: block;
     padding: .5em 0;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
