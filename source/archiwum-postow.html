@@ -21,7 +21,7 @@ use:
     <h2 class="archive-date">{{ month }}.{{ year }}</h2>
   {% endif %}
     <div class="archive">
-      <a href="{{ site.url }}{{ post.url }}" class="archive__title">{{ post.title }} &mdash; <small class="archive__date">{{ post.date | date("d.m.Y") }}</small></a>
+      <a href="{{ site.url }}{{ post.url }}" class="archive__link">{{ post.title }} &mdash; <small class="archive__date">{{ post.date | date("d.m.Y") }}</small></a>
     </div>
   {% endfor %}
 
