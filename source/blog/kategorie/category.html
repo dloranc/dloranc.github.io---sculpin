@@ -36,16 +36,22 @@ pagination:
 
 {% if page.pagination.previous_page or page.pagination.next_page %}
     <nav class="pagination">
-    {% if page.pagination.previous_page %}
-    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Poprzednia strona">
-      <span class="title">Poprzednia strona</span>
-    </a>
-    {% endif %}
-    {% if page.pagination.next_page %}
-    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Następna strona">
-      <span class="title">Następna strona</span>
-    </a>
-    {% endif %}
+      <ul>
+        {% if page.pagination.previous_page %}
+          <li>
+            <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Poprzednia strona">
+              <span class="title">Poprzednia strona</span>
+            </a>
+          </li>
+        {% endif %}
+        {% if page.pagination.next_page %}
+        <li>
+          <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Następna strona">
+            <span class="title">Następna strona</span>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
     </nav>
 {% endif %}
 
