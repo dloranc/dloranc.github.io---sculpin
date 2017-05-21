@@ -11,7 +11,7 @@ tags:
 image: torchcraft_basic_script.jpg
 excerpt: Post o podstawach pracy z TorchCraftem. Dowiesz się jak wyglądają mapy w TorchCrafcie i jak wydawać rozkazy jednostkom.
 ---
-Miałem w tym tygodniu pisać o samym Torchu i o tym jak tworzyć w nim sieci neuronowe, ale zdecydowałem, że zajmę się samymi podstawami samego TorchCrafta i jego interakcji ze Starcraftem.TorchCraft, niestety, ma słabą dokumentację i poza opisem instalacji praktycznie wszystko trzeba rozkminiać na bazie przykładów z katalogu `examples`.
+Miałem w tym tygodniu pisać o samym Torchu i o tym jak tworzyć w nim sieci neuronowe, ale zdecydowałem, że zajmę się samymi podstawami samego TorchCrafta i jego interakcji ze Starcraftem. TorchCraft, niestety, ma słabą dokumentację i poza opisem instalacji praktycznie wszystko trzeba rozkminiać na bazie przykładów z katalogu `examples`.
 
 ## Mapy
 
@@ -32,7 +32,7 @@ Zobaczmy na nasze mapy micro:
 
 Widzimy, że triggery na samym początku każdej rozgrywki tworzą po kilka jednostek dla obu graczy, a także, jeśli zachodzi potrzeba następuje wysłanie jednostek do ataku.
 
-Ok, tyle jeśli o mapy. Czas zająć się kodem.
+Ok, tyle jeśli chodzi o mapy. Czas zająć się kodem.
 
 ## Kod
 
@@ -61,7 +61,7 @@ tc:close()
 
 Przenalizujmy ten przykład:
 
-Pierwsze dwie linijki to host i port potrzebny do połączenia z hostem (Windowsem ze Starcraftem):
+Pierwsze dwie linijki to host i port potrzebny do połączenia z hostem (Windows ze Starcraftem):
 
 ```Lua
 local hostname = "192.168.56.1"
@@ -103,7 +103,7 @@ Na samym końcu zamykamy połączenie:
 tc:close()
 ```
 
-To tyle, jak widać sprawa jest bardzo prosta. Pobawmy się jednak jeszcze trochę. Dodajmy konfigurację nad pętlą `while`:
+Jak widać, sprawa jest bardzo prosta. Pobawmy się jednak jeszcze trochę. Dodajmy konfigurację nad pętlą `while`:
 
 ```Lua
 local setup = {
