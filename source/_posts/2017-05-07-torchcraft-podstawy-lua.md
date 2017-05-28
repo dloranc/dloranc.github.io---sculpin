@@ -59,7 +59,9 @@ print(a)               --> Hello
 ```
 Widać także, że stringi są *immutable*.
 
-### Tablice
+### Tabele
+W Lua jest coś takiego jak tabele, przypominają one tablice asocjacyjne znane z PHP. Indeksować w nich można za pomocą dowolnej wartości (poza reserved words takimi jak nil, while i tak dalej.
+
 ```lua
 a = {1, 2, 3, 4, 5}
 print(a)
@@ -95,11 +97,20 @@ print(a)
 print(table.getn(a)) --> 6
 print(#a)            --> 6
 
-a = {x=1, y=1}  -- array as record
+a = {x=1, y=1}
 print(a.x, a.y) --> 1   1
 
+a = {}
+table.insert(a, 10)
+
+--[[
+{
+  1 : 10
+}
+]]
+
 ```
-Iterację tabeli zaczynamy od *1*. Więcej na temat tablic w [dokumentacji](https://www.lua.org/pil/3.6.html).
+Iterację tabeli zaczynamy od *1*. Więcej na temat tabeli w [dokumentacji](https://www.lua.org/pil/3.6.html).
 
 ### Instrukcje warunkowe
 ```lua
