@@ -19,7 +19,7 @@ Na pewno będę musiał się w końcu nauczyć reinforcement learningu, zaczynaj
 
 3. [UC Berkeley CS188 Intro to AI](http://ai.berkeley.edu/home.html) - ktoś ze Slacka mi to polecił, nie miałem czasu całości przejrzeć, ale wygląda nawet ciekawie.
 
-Chyba tyle podstaw. Dalej będzie ciekawiej, pozbierałem trochę linków z [r/machinelearning](reddit.com/r/MachineLearning/), ich ilość w zakładkach przytłacza, więc wybrałem te moim zdaniem najbardziej istotne:
+Chyba tyle podstaw. Dalej będzie ciekawiej, pozbierałem trochę linków z [r/machinelearning](https://reddit.com/r/MachineLearning/), ich ilość w zakładkach przytłacza, więc wybrałem te moim zdaniem najbardziej istotne:
 
 ## Arxiv
 
