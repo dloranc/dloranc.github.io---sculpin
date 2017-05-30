@@ -11,6 +11,10 @@ tags:
 image: learning_bwapi.jpg
 excerpt: Dopieszczamy bota, uczymy się BWAPI, jego funkcji do debugowania i innych przydatnych rzeczy.
 ---
+*Ten post jest o rozwijanym przeze mnie bocie do Starcrafta wykorzystującym uczenie maszynowe. Projekt jest rozwijany w ramach konkursu "Daj Się Poznać 2017".*
+
+---
+
 Ten tydzień spędziłem dopieszczając mojego bota do Starcrafta. Nie chciało mi się jeszcze brać za reinforcement learning, bo wolałem spędzić czas na poznawaniu BWAPI. Kod jest do przeglądnięcia tutaj, w moim repozytorium [dloranc/five-pool-bot](https://github.com/dloranc/five-pool-bot).
 
 ## Poprawki

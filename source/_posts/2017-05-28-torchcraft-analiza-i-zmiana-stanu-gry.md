@@ -11,6 +11,10 @@ tags:
 image: torchcraft_game_state_change_and_analysis.jpg
 excerpt: Post o tym jak zmienić stan gry, poprzez jego analizę i wydawanie rozkazów jednostkom.
 ---
+*Ten post jest o rozwijanym przeze mnie bocie do Starcrafta wykorzystującym uczenie maszynowe. Projekt jest rozwijany w ramach konkursu "Daj Się Poznać 2017".*
+
+---
+
 W ostatnim [poście o projekcie](/blog/2017/05/21/torchcraft-podstawowy-skrypt/) opisałem jak wyglądają mapy i napisałem jak stworzyć podstawowy skrypt nawiązujący połączenie ze Starcraftem i pobierający w pętli stan gry, a właściwie to każdej kolejnej logicznej klatki gry. Nie pisałem chyba do tej pory co to jest logiczna klatka gry. Sprawa z logicznymi klatkami (logical frame) wygląda tak, że renderowanie grafiki jest niezależne od obliczeń zmieniających stan gry. Liczba klatek na sekundę nie jest stała i zależy od prędkości komputera. Stan gry natomiast jest obliczany co jakiś interwał. Jeżeli graliście w Starcrafta, to pewnie kojarzycie, że w opcjach da się ustawić prędkość gry. Zmiana prędkości skutkuje zmianą czasu pomiędzy obliczeniami klatek logicznych. To jest zasadnicza różnica, gdybyśmy mieli te stałe 30 albo 60 FPS, to zapewne sprawa zostałaby rozwiązana inaczej.
 
 ## Stan gry

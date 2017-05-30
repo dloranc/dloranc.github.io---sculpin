@@ -10,6 +10,10 @@ tags:
 image: torchcraft_installing.jpg
 excerpt: Co tam u mnie w projekcie? Słabo, męczę się z ustawianiem TorchCrafta, żeby zaczął działać.
 ---
+*Ten post jest o rozwijanym przeze mnie bocie do Starcrafta wykorzystującym uczenie maszynowe. Projekt jest rozwijany w ramach konkursu "Daj Się Poznać 2017".*
+
+---
+
 Przez cały ten tydzień zastanawiałem się jaką obrać drogę dla mojego projektu bota. Chciałem użyć Deeplearning4j, ale ta biblioteka gryzie się z BWMirrorem, który wymaga Javy 32-Bit. Alternatywą jest przepisanie całego projektu z BWMirrora na JNIBWAPI. Drugą alternatywą jest przepisanie projektu do C++, co mnie średnio interesuje, bo nie czuję się dobrze w tym języku. Znaczy, w Javie też nie, ale pisanie w Javie łatwiej ogarnąć. Postanowiłem jednak wziąć się w końcu za TorchCrafta. Tracę oczywiście możliwość udziału w SSCAIT, ale myślę, że lepiej będzie coś w końcu zrobić związanego z reinforcement learningiem z pomocą gotowego środowiska. Gdybym miał to samo robić w Javie zeszłoby mi z tym naprawdę dużo czasu.
 
 ## Instalacja na Linuksie

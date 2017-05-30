@@ -10,6 +10,10 @@ tags:
 image: torchcraft_lua_basics.png
 excerpt: Ogarnąłem instalację TorchCrafta. Wziąłem się za pisanie kodu w Lua, a ten post jest dumpem moich notatek utworzonych w trakcie nauki tego języka.
 ---
+*Ten post jest o rozwijanym przeze mnie bocie do Starcrafta wykorzystującym uczenie maszynowe. Projekt jest rozwijany w ramach konkursu "Daj Się Poznać 2017".*
+
+---
+
 Ostatnio nie starczyło mi czasu by dokończyć instalację TorchCrafta. Już po napisaniu [poprzedniego posta](/blog/2017/04/30/instalacja-torchcrafta), przypomniałem sobie, że w NTFS jest coś takiego jak "junction point", które jest czymś w rodzaju symlinków w Windowsie. Jeśli BWEnv.exe wymaga Starcrafta ze ścieżką *C:\Starcraft*, to wystarczy ściągnąć [Junction](https://technet.microsoft.com/pl-pl/sysinternals/bb896768), przenieść do *C:\Windows\System32* i wykonać w konsoli: **junction c:\Starcraft d:\Games\Starcraft**. U mnie zadziałało. No, dobra, nie do końca zadziałało, bo gra uruchomiła się na pełnym ekranie (w configu jest, że ma być w oknie), coś tam się wykonywało, ale po drugiej próbie uruchomienia BWEnv.exe już nie chciało. Lepszą opcją okazało się użycie BWEnv.dll i odpalanie gry przez Chaoslauchera.
 
 ## Lua - podstawy
