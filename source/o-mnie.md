@@ -20,7 +20,7 @@ title: O mnie
 
 <img src="/images/posts_thumbnails/daj_sie_poznac_2017.jpg" alt="Daj Się Poznać 2017">
 
-<p>Obecnie biorę udział w konkursie <a href="http://devstyle.pl/daj-sie-poznac">„Daj Się Poznać 2017”</a> z projektem, który polega na stworzeniu bota grającego w Starcrafta 2 - popularnego e-sportowego RTS-a.</p>
+<p>Obecnie biorę udział w konkursie <a href="http://devstyle.pl/daj-sie-poznac">„Daj Się Poznać 2017”</a> z projektem, który polega na stworzeniu bota grającego w Starcrafta - popularnego e-sportowego RTS-a.</p>
 
 <a href="https://github.com/dloranc/starcraft-ai">Repozytorium mojego projektu</a>
 </div>
