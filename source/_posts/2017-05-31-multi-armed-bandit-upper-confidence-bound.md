@@ -80,7 +80,7 @@ def __init__(self, arms, pulls, epsilon, c=0):
 
 Wygenerowałem tabelkę z możliwymi wartościami dla jakiejś akcji \\(a\\):
 
-| t  | \\(N_t\\) | \\(\log{t}\\) | \\(c\sqrt{\frac{\log{t}}{N_t}}, c = 2\\) |
+| \\(t\\)  | \\(N_t\\) | \\(\log{t}\\) | \\(c\sqrt{\frac{\log{t}}{N_t}}, c = 2\\) |
 |----|-----|--------------|----------------|
 | 1  | 1   | 0            | 0              |
 | 2  | 1   | 0,3010299957 | 1,0973240099   |
