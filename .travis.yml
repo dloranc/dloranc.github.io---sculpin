@@ -1,2 +1,4 @@
 language: php
+script:
+    - php bin/sculpin generate --env=prod
 
