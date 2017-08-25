@@ -1,4 +1,6 @@
 language: php
+install:
+   - composer install
 script:
     - php bin/sculpin generate --env=prod
 
