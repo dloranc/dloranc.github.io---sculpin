@@ -25,10 +25,10 @@ SHA=`git rev-parse --verify HEAD`
 git clone $REPO output_prod/
 cd output_prod/
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
-cd ..
 
 # Clean out existing contents
 find * -maxdepth 0 -name '.git' -prune -o -exec rm -rf '{}' ';' || exit 0
+cd ..
 
 # Run our compile script
 generate
