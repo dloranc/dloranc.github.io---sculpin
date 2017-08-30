@@ -6,5 +6,4 @@ install:
 script: bash ./deploy.sh
 env:
   global:
-    - ENCRYPTION_LABEL: "fd919679d25c"
     - COMMIT_AUTHOR_EMAIL: "dawidloranc@gmail.com"
