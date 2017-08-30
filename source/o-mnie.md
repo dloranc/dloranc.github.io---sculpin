@@ -26,5 +26,5 @@ title: O mnie
 
 <p><a href="https://github.com/dloranc/starcraft-ai">Repozytorium mojego projektu</a></p>
 
-<p>Inne moje projekty można znaleźć na podstronie ["Projekty"](/projekty).</p>
+<p>Inne moje projekty można znaleźć na podstronie <a href="/projekty">Projekty</a>.</p>
 </div>
