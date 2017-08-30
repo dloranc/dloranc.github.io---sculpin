@@ -1,6 +1,10 @@
 language: php
+php:
+  - '7.1'
 install:
-   - composer install
-script:
-    - php bin/sculpin generate --env=prod
-
+  - composer install
+script: bash ./deploy.sh
+env:
+  global:
+    - ENCRYPTION_LABEL: "60ad43211f1b"
+    - COMMIT_AUTHOR_EMAIL: "dawidloranc@gmail.com"
