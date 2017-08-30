@@ -13,6 +13,5 @@ sculpin.phar
 .idea/
 
 node_modules/
-source/css/
 vendor/
 deploy_key
