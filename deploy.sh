@@ -49,7 +49,6 @@ fi
 git add -A .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
-openssl aes-256-cbc -K $encrypted_a3d52ca1f4d7_key -iv $encrypted_a3d52ca1f4d7_iv -in ../deploy_key.enc -out ../deploy_key -d
 chmod 600 ../deploy_key
 eval `ssh-agent -s`
 ssh-add ../deploy_key
