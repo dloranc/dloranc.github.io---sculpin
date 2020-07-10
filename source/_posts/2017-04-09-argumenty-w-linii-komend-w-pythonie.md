@@ -63,7 +63,7 @@ if __name__ == '__main__':
 
 Z zawartości docstringa łatwo się domyślić co wywołać i z jakimi argumentami mamy do czynienia. Nawiasy trójkątne oznaczają argumenty, myślniki (dwa lub jeden) to opcje, a trzy kropki oznaczają to, że argumenty mogą się powtarzać. Nawiasy w połączeniu z pionową kreską natomiast oznaczają wzajemnie wykluczające się opcje.
 
-Czas na testy, wowołajmy `--version` i `--help`:
+Czas na testy, wywołajmy `--version` i `--help`:
 
 ![python sum.py --version](/images/posts/python_command_line_arguments/02.png "python sum.py --version, wynik: Sum 1.0")
 
